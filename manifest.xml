@@ -1,0 +1,16 @@
+<package>
+  <description brief="learning_nxt">
+
+     learning_nxt
+
+  </description>
+  <author>eranda</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/learning_nxt</url>
+  <depend package="rospy"/>
+  <depend package="nxt_ros"/>
+
+</package>
+
+

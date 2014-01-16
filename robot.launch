@@ -1,0 +1,10 @@
+<launch>
+
+  <node pkg="nxt_ros" type="nxt_ros.py" name="nxt_ros" output="screen" respawn="true">
+    <rosparam command="load" file="$(find learning_nxt)/robot.yaml" />
+    
+  </node>
+  <node pkg="nxt_ros" type="joint_states_aggregator.py" name="joint_state_publisher" output="screen" /> 
+  <node pkg="nxt_controllers" type="base_controller.py" name="nxt_base_controller" />
+  <node pkg="nxt_controllers" type="base_odometry.py" name="nxt_base_odometry" />    
+</launch>
